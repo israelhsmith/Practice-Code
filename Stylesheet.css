@@ -1,0 +1,78 @@
+/*All html elements can be used as selectors in CSS*/
+body {
+	background-color:wheat;
+}
+span {
+	color:blue;
+	font-family:Impact;
+}
+div {
+	background-color:red;
+	height:500px;
+	width: 500px;
+	display:inline-block; /*the display property changes the positioning of elements on the page. This property has four possible values: block, inline-block, inline, and none*/
+	margin:auto;
+	padding:5px 10px 15px 20px;
+	border-radius: 10px;
+}
+p {
+	font-family:Impact;
+	font-size:20px;
+	margin-top:25px;
+}
+h1 {
+	color:red;
+}
+td {
+	height:25px;
+	border: 5x solid black;
+}
+table {
+	border: 10px dashed blue;
+	float:right;
+	clear:both;
+}
+
+/*IDs are used for when you have only one element that should receive styling*/
+#id {
+	color:red
+}
+
+/*classes are used when you have several elements that should receive the same styling*/
+.class {
+	font-family:Verdana;
+}
+
+/*there are several pseudo-class selectors that can be used to manipulate links*/
+a {
+	target="_blank";
+}
+a:hover {
+	color:#cc0000;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:link { /*link is used for sites that have not been visited*/
+	font-family:Garamond;
+	color:yellow;
+}
+a:visited { /*visited is used for...you guessed it, sites that have been visited*/
+	font-family:sans-serif;
+	color:violet;
+}
+p:first-child { /*first-child is used to apply styling to only elements that are the first children of their parents&*/
+	color:red;
+}
+p:nth-child(*) { /*nth-child is used to select the any child of an element after the first child. Simply add the child's number in the parantheses after the selector*/
+	font-weight:bold;
+}
+* { /*the universal selector is used to select every element in the html code*/
+	/*border: 5px solid #0000ff;*/
+	margin:20px 20px 20px 20px;
+	padding:1px 1px 1px 1px
+}
+img {
+	float:right /*the float property is used to move elements around the page*/;
+	position:fixed;
+	width: 50%;
+}
